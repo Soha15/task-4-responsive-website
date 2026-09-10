@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+nav {
+    background: #222;
+    color: white;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px;
+    gap: 40px;
+}
+
+.hero > div {
+    flex: 1;
+}
+
+.hero h1 {
+    font-size: 48px;
+}
+
+.hero p {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+button {
+    padding: 12px 25px;
+    border: none;
+    background: #222;
+    color: white;
+    cursor: pointer;
+}
+
+.card {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px #ccc;
+}
+
+/* Mobile Responsive Design */
+@media screen and (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .card {
+        width: 100%;
+        padding: 25px;
+    }
+}
